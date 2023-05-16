@@ -1,0 +1,35 @@
+Mòdulo 1:
+En este módulo, obtendrá información sobre lo siguiente:
+
+Tareas administrativas de GitHub y su propósito en cada nivel jerárquico.
+Las distintas formas en las que los administradores pueden configurar la autenticación para que los usuarios puedan acceder a GitHub a través del explorador web y el cliente de Git.
+Los niveles de permisos jerárquicos y lo que estos le permiten hacer en GitHub.
+
+Objetivos de aprendizaje:
+Al término de este módulo, sabrá hacer lo siguiente:
+
+Resumir las estructuras organizativas y los niveles de permisos que los administradores de GitHub pueden usar para organizar los miembros con el fin de controlar el acceso y la seguridad.
+Identificar las diversas tecnologías que permiten una estrategia de autenticación segura que ayude a los administradores a administrar de forma centralizada el acceso al repositorio.
+Describir las tecnologías necesarias para administrar los equipos y los miembros de forma centralizada mediante los servicios de información de directorio existentes y explicar la manera en que se puede usar GitHub como proveedor de identidades para la autenticación y la autorización.
+
+Los miembros de un equipo con los permisos de responsable de mantenimiento del equipo o administrador de repositorio pueden:
+
+Cree un equipo y seleccione o cambie el equipo principal.
+Eliminar un equipo o cambiarle el nombre.
+Agregar miembros de la organización a un equipo o quitarlos de este, así como sincronizar la pertenencia de un equipo de GitHub con un grupo de IdP.
+Agregue o quite colaboradores externos (personas que no sean explícitamente miembros de su organización, como consultores o empleados temporales) de los repositorios de equipo.
+Habilite o deshabilite las discusiones del equipo en la página del equipo.
+Cambiar la visibilidad del equipo dentro de la organización.
+Administrar la asignación automática de revisión de código para las solicitudes de incorporación de cambios mediante el algoritmo de enrutamiento de asignación de revisión de GitHub.
+Programe recordatorios.
+Configure la imagen de perfil de su equipo.
+
+Claves SSH
+Como alternativa al uso de tokens de acceso personal, los usuarios pueden conectarse y autenticarse en servidores y servicios remotos mediante SSH con la ayuda de claves SSH. Las claves SSH eliminan la necesidad de que los usuarios proporcionen su nombre de usuario y su token de acceso personal con cada interacción.
+
+Al configurar SSH, los usuarios generarán una clave SSH, la agregarán al agente de SSH y, después, la agregarán a su cuenta de GitHub. La adición de la clave SSH al agente de SSH garantiza que la clave SSH tenga un nivel de seguridad adicional mediante el uso de una frase de contraseña. Los usuarios pueden configurar la copia local de Git de modo que proporcione la frase de contraseña automáticamente, o bien pueden proporcionarla de forma manual cada vez que usen la herramienta de línea de comandos de Git para interactuar con GitHub.
+
+Se puede incluso usar las claves SSH con un repositorio que sea propiedad de una organización que use el inicio de sesión único de SAML. Si la organización proporciona certificados SSH, los usuarios también pueden usarlos para acceder a los repositorios de la organización sin agregar el certificado a su cuenta de GitHub.
+
+Claves de implementación
+Las claves de implementación son otro tipo de clave SSH en GitHub que conceden a un usuario acceso a un único repositorio. GitHub adjunta la parte pública de la clave directamente al repositorio en lugar de a una cuenta de usuario personal, y la parte privada de la clave permanece en el servidor del usuario. Las claves de implementación son de solo lectura de forma predeterminada, pero puede darles acceso de escritura al agregarlas a un repositorio.
